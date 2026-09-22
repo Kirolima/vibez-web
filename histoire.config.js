@@ -4,7 +4,7 @@ import { HstSvelte } from '@histoire/plugin-svelte';
 export default defineConfig({
 	plugins: [HstSvelte()],
 	theme: {
-		title: 'Histoire',
+		title: 'Vibez Web',
 		logo: {
 			square: './static/favicons/favicon.png',
 			light: './static/favicons/favicon.png',
