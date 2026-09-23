@@ -1,27 +1,16 @@
 <script>
-	import FeaturesIcon from '$lib/icons/features.svelte';
-	import GitHubIcon from '$lib/icons/socials/github.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
-	import Sparkles from '../atoms/Sparkles.svelte';
 </script>
 
 <section id="hero">
-	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
+	<h1 class="hello">Yeni nesil,<br /><span>yeni medya!</span></h1>
 	<p class="intro">
-		<span class="left">It supports Markdown,</span>
-		<span class="right">and is really fast.</span>
+		<span class="left">Markanız için yaratıcı fikirler,</span>
+		<span class="right">ölçülebilir dijital çözümler.</span>
 	</p>
 	<div class="ctas">
-		<Sparkles>
-			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
-				<GitHubIcon slot="icon" />
-				Source Code
-			</Button>
-		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-			<FeaturesIcon slot="icon" />
-			Components
-		</Button>
+		<Button color="primary" href="/hizmetler">Hizmetlerimizi keşfet</Button>
+		<Button href="/iletisim">Bize ulaşın</Button>
 	</div>
 </section>
 
@@ -43,6 +32,12 @@
 
 		.hello {
 			text-align: center;
+			font-size: clamp(2.6rem, 7vw, 5rem);
+			line-height: 1;
+
+			span {
+				color: var(--color--primary);
+			}
 		}
 
 		.intro {

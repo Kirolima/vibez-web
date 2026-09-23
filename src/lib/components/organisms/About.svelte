@@ -1,29 +1,16 @@
-<script>
-	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
-	import Socials from '$lib/components/molecules/Socials.svelte';
-	import Image from '../atoms/Image.svelte';
-</script>
-
 <section id="about">
 	<div class="info">
-		<h2>
-			This is a catchy headline that
-			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
-		</h2>
+		<p class="eyebrow">Biz Kimiz</p>
+		<h2>Markaların dijital dünyadaki yol arkadaşıyız.</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			Uşak'ta faaliyet gösteren bir dijital medya ve reklam ajansıyız. Strateji,
+			tasarım ve teknolojiyi bir araya getirerek markaların daha görünür, daha
+			anlaşılır ve daha etkili olmasını sağlıyoruz.
 		</p>
-		<div class="socials">
-			<span>Socials:</span>
-			<Socials />
-		</div>
 	</div>
 	<div class="image">
-		<Image
-			src="/images/sample-image.png"
-			alt="Sample for the static template"
-		/>
+		<strong>VİBEZ</strong>
+		<span>fikirden etkiye</span>
 	</div>
 </section>
 
@@ -54,6 +41,13 @@
 				}
 			}
 
+			.eyebrow {
+				color: var(--color--primary);
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+			}
+
 			p {
 				@include for-phone-only {
 					text-align: justify;
@@ -65,23 +59,20 @@
 			}
 		}
 
-		.socials {
-			display: flex;
-			align-items: center;
-			gap: 15px;
-
-			@include for-phone-only {
-				justify-content: center;
-				margin-bottom: 10px;
-				span {
-					display: none;
-				}
-			}
-		}
-
 		.image {
 			width: 220px;
 			height: 220px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: var(--color--primary);
+			color: var(--color--text-inverse);
+			transform: rotate(3deg);
+
+			strong {
+				font-size: 2rem;
+			}
 		}
 	}
 </style>

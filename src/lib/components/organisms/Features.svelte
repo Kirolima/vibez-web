@@ -7,9 +7,9 @@
 </script>
 
 <ContentSection
-	id="features"
-	title="Features"
-	description="Here are some of the features of this template"
+	id="services"
+	title="Hizmetler"
+	description="Markanızın ihtiyacı olan dijital çözümleri tek çatı altında sunuyoruz."
 >
 	<div class="features-container">
 		<div class="three-group-grid">
