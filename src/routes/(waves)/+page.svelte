@@ -1,7 +1,8 @@
 <script lang="ts">
-	import Hero from '$lib/components/organisms/Hero.svelte';
+	import IndexPage from '../../pages/+index.svelte';
+	import type { Feature } from '$lib/utils/types';
+
+	export let data: { features: Feature[] };
 </script>
 
-<div class="container">
-	<Hero />
-</div>
+<IndexPage features={data.features} />
